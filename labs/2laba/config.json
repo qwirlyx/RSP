@@ -1,0 +1,8 @@
+{
+  "name": "SkyLine",
+  "planes": [
+    { "type": "passenger", "model": "Boeing 737", "passengerCapacity": 180, "cargoCapacity": 2000, "flightRange": 5000 },
+    { "type": "cargo", "model": "An-124", "passengerCapacity": 0, "cargoCapacity": 150000, "flightRange": 9000 },
+    { "type": "passenger", "model": "Airbus A320", "passengerCapacity": 150, "cargoCapacity": 1500, "flightRange": 6000 }
+  ]
+}
