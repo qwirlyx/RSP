@@ -1,0 +1,28 @@
+2025-12-05 12:30:38,639 [INFO] controller - INFO: получен запрос от пользовател€
+2025-12-05 12:30:38,640 [DEBUG] service - DEBUG: запуск обработки
+2025-12-05 12:30:38,640 [INFO] service - INFO: сервис начал выполнение
+2025-12-05 12:30:38,640 [WARNING] service - WARNING: произошла подозрительна€ ситуаци€
+Traceback (most recent call last):
+  File "C:\Users\—тудент\Desktop\6laba\service.py", line 10, in do_work
+    x = 10 / 0  # ошибка специально
+ZeroDivisionError: division by zero
+2025-12-05 12:30:38,641 [ERROR] service - ERROR: критическа€ ошибка
+Traceback (most recent call last):
+  File "C:\Users\—тудент\Desktop\6laba\service.py", line 10, in do_work
+    x = 10 / 0  # ошибка специально
+ZeroDivisionError: division by zero
+2025-12-05 12:30:38,642 [INFO] controller - INFO: ответ сервиса = error
+2025-12-05 12:34:33,162 [INFO] controller - INFO: получен запрос от пользовател€
+2025-12-05 12:34:33,163 [DEBUG] service - DEBUG: запуск обработки
+2025-12-05 12:34:33,163 [INFO] service - INFO: сервис начал выполнение
+2025-12-05 12:34:33,164 [WARNING] service - WARNING: произошла подозрительна€ ситуаци€
+Traceback (most recent call last):
+  File "C:\Users\—тудент\Desktop\6laba\service.py", line 10, in do_work
+    x = 10 / 0
+ZeroDivisionError: division by zero
+2025-12-05 12:34:33,164 [ERROR] service - ERROR: критическа€ ошибка
+Traceback (most recent call last):
+  File "C:\Users\—тудент\Desktop\6laba\service.py", line 10, in do_work
+    x = 10 / 0
+ZeroDivisionError: division by zero
+2025-12-05 12:34:33,165 [INFO] controller - INFO: ответ сервиса = error

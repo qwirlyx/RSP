@@ -1,0 +1,99 @@
+{
+  "info": {
+    "name": "Tasks REST API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+
+    {
+      "name": "GET ALL TASKS",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:5000/tasks",
+          "protocol": "http",
+          "host": ["127","0","0","1"],
+          "port": "5000",
+          "path": ["tasks"]
+        }
+      }
+    },
+
+    {
+      "name": "GET TASK BY ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:5000/tasks/1",
+          "protocol": "http",
+          "host": ["127","0","0","1"],
+          "port": "5000",
+          "path": ["tasks", "1"]
+        }
+      }
+    },
+
+    {
+      "name": "POST CREATE TASK",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Изучить REST API\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/tasks",
+          "protocol": "http",
+          "host": ["127","0","0","1"],
+          "port": "5000",
+          "path": ["tasks"]
+        }
+      }
+    },
+
+    {
+      "name": "PUT UPDATE TASK",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Задача обновлена\",\n  \"completed\": true\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/tasks/1",
+          "protocol": "http",
+          "host": ["127","0","0","1"],
+          "port": "5000",
+          "path": ["tasks", "1"]
+        }
+      }
+    },
+
+    {
+      "name": "DELETE TASK",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://127.0.0.1:5000/tasks/1",
+          "protocol": "http",
+          "host": ["127","0","0","1"],
+          "port": "5000",
+          "path": ["tasks", "1"]
+        }
+      }
+    }
+
+  ]
+}
